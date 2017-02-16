@@ -1,0 +1,960 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o (exit)
+/usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+                              ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o (__tablejump2__)
+/usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+                              BootloaderDFU.o (__do_copy_data)
+/usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+                              BootloaderDFU.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eerd_byte.o)
+                              BootloaderDFU.o (eeprom_read_byte)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eeupd_byte.o)
+                              ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o (eeprom_update_byte)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eewr_byte.o)
+                              BootloaderDFU.o (eeprom_write_byte)
+
+Se asignan símbolos comunes
+Símbolo común       tamaño            fichero
+
+USB_IsInitialized   0x1               ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+SentCommand         0x8               BootloaderDFU.o
+USB_ControlRequest  0x8               ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+USB_ConfigurationNumber
+                    0x1               ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ResponseByte        0x1               BootloaderDFU.o
+
+Secciones de salida descartadas
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+ .text          0x0000000000000000        0x0 BootloaderDFU.o
+ .text          0x0000000000000000        0x0 Descriptors.o
+ .bss           0x0000000000000000        0x0 Descriptors.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .text.USB_Device_SendRemoteWakeup
+                0x0000000000000000       0x2e ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .debug_info    0x0000000000000000       0xd2 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .debug_abbrev  0x0000000000000000       0x80 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .debug_aranges
+                0x0000000000000000       0x20 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .debug_ranges  0x0000000000000000       0x10 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .debug_line    0x0000000000000000       0xac ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .debug_str     0x0000000000000000      0x1fb ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .comment       0x0000000000000000       0x12 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .debug_frame   0x0000000000000000       0x24 ../../LUFA/Drivers/USB/LowLevel/Device.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .text.Endpoint_ClearEndpoints
+                0x0000000000000000       0x1c ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Host.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Host.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Host.o
+ .debug_line    0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Host.o
+ .debug_str     0x0000000000000000      0x133 ../../LUFA/Drivers/USB/LowLevel/Host.o
+ .comment       0x0000000000000000       0x12 ../../LUFA/Drivers/USB/LowLevel/Host.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Pipe.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Pipe.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Pipe.o
+ .debug_line    0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/Pipe.o
+ .debug_str     0x0000000000000000      0x133 ../../LUFA/Drivers/USB/LowLevel/Pipe.o
+ .comment       0x0000000000000000       0x12 ../../LUFA/Drivers/USB/LowLevel/Pipe.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .text.USB_GetNextDescriptorOfType
+                0x0000000000000000       0x42 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .text.USB_GetNextDescriptorOfTypeBefore
+                0x0000000000000000       0x48 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .text.USB_GetNextDescriptorOfTypeAfter
+                0x0000000000000000       0x3e ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .text.USB_GetNextDescriptorComp
+                0x0000000000000000       0x7e ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_info    0x0000000000000000      0x3df ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_abbrev  0x0000000000000000      0x192 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_loc     0x0000000000000000      0x4d7 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_aranges
+                0x0000000000000000       0x38 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_ranges  0x0000000000000000       0x28 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_line    0x0000000000000000      0x154 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_str     0x0000000000000000      0x3e3 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .comment       0x0000000000000000       0x12 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .debug_frame   0x0000000000000000       0xc8 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Write_Control_PStream_LE
+                0x0000000000000000       0xb8 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Write_Control_EStream_LE
+                0x0000000000000000       0xe0 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Write_Control_Stream_BE
+                0x0000000000000000       0xbe ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Write_Control_PStream_BE
+                0x0000000000000000       0xc2 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Write_Control_EStream_BE
+                0x0000000000000000       0xf4 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Read_Control_Stream_LE
+                0x0000000000000000       0x72 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Read_Control_EStream_LE
+                0x0000000000000000       0x84 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Read_Control_Stream_BE
+                0x0000000000000000       0x7c ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text.Endpoint_Read_Control_EStream_BE
+                0x0000000000000000       0x8a ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/HostStandardReq.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/HostStandardReq.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/HostStandardReq.o
+ .debug_line    0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/HostStandardReq.o
+ .debug_str     0x0000000000000000      0x13f ../../LUFA/Drivers/USB/HighLevel/HostStandardReq.o
+ .comment       0x0000000000000000       0x12 ../../LUFA/Drivers/USB/HighLevel/HostStandardReq.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/PipeStream.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/PipeStream.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/PipeStream.o
+ .debug_line    0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/PipeStream.o
+ .debug_str     0x0000000000000000      0x13a ../../LUFA/Drivers/USB/HighLevel/PipeStream.o
+ .comment       0x0000000000000000       0x12 ../../LUFA/Drivers/USB/HighLevel/PipeStream.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+ .text          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/Class/Host/HIDParser.o
+ .data          0x0000000000000000        0x0 ../../LUFA/Drivers/USB/Class/Host/HIDParser.o
+ .bss           0x0000000000000000        0x0 ../../LUFA/Drivers/USB/Class/Host/HIDParser.o
+ .debug_line    0x0000000000000000        0x0 ../../LUFA/Drivers/USB/Class/Host/HIDParser.o
+ .debug_str     0x0000000000000000      0x13a ../../LUFA/Drivers/USB/Class/Host/HIDParser.o
+ .comment       0x0000000000000000       0x12 ../../LUFA/Drivers/USB/Class/Host/HIDParser.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eerd_byte.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eerd_byte.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eerd_byte.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eeupd_byte.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eeupd_byte.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eeupd_byte.o)
+ .text.avr-libc
+                0x0000000000000000       0x24 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eeupd_byte.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eewr_byte.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eewr_byte.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eewr_byte.o)
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800100 0x000000000000ff00 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+La dirección de la sección .data se estableció a 0x800100
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+LOAD BootloaderDFU.o
+LOAD Descriptors.o
+LOAD ../../LUFA/Drivers/USB/LowLevel/Device.o
+LOAD ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+LOAD ../../LUFA/Drivers/USB/LowLevel/Host.o
+LOAD ../../LUFA/Drivers/USB/LowLevel/Pipe.o
+LOAD ../../LUFA/Drivers/USB/LowLevel/USBController.o
+LOAD ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+LOAD ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+LOAD ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+LOAD ../../LUFA/Drivers/USB/HighLevel/Events.o
+LOAD ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+LOAD ../../LUFA/Drivers/USB/HighLevel/HostStandardReq.o
+LOAD ../../LUFA/Drivers/USB/HighLevel/PipeStream.o
+LOAD ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+LOAD ../../LUFA/Drivers/USB/Class/Host/HIDParser.o
+La dirección de la sección .text se estableció a 0x1e000
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libm.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libc.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x000000000001e000      0xd2a
+ *(.vectors)
+ .vectors       0x000000000001e000       0x98 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+                0x000000000001e000                __vectors
+                0x000000000001e000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.USB_Device_ProcessControlRequest
+                0x000000000001e098       0x14 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                0x000000000001e0ac                . = ALIGN (0x2)
+                0x000000000001e0ac                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000001e0ac        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000001e0ac                __trampolines_end = .
+ *(.progmem*)
+                0x000000000001e0ac                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000001e0ac                __ctors_start = .
+ *(.ctors)
+                0x000000000001e0ac                __ctors_end = .
+                0x000000000001e0ac                __dtors_start = .
+ *(.dtors)
+                0x000000000001e0ac                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000001e0ac        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+                0x000000000001e0ac                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000001e0ac        0xc /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000001e0b8       0x1a /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+                0x000000000001e0b8                __do_copy_data
+ .init4         0x000000000001e0d2       0x10 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+                0x000000000001e0d2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000000001e0e2        0x4 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+ *(.init9)
+ *(.text)
+ .text          0x000000000001e0e6        0x2 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+                0x000000000001e0e6                __vector_22
+                0x000000000001e0e6                __vector_28
+                0x000000000001e0e6                __vector_1
+                0x000000000001e0e6                __vector_32
+                0x000000000001e0e6                __vector_34
+                0x000000000001e0e6                __vector_24
+                0x000000000001e0e6                __vector_12
+                0x000000000001e0e6                __bad_interrupt
+                0x000000000001e0e6                __vector_6
+                0x000000000001e0e6                __vector_31
+                0x000000000001e0e6                __vector_35
+                0x000000000001e0e6                __vector_3
+                0x000000000001e0e6                __vector_23
+                0x000000000001e0e6                __vector_30
+                0x000000000001e0e6                __vector_25
+                0x000000000001e0e6                __vector_11
+                0x000000000001e0e6                __vector_13
+                0x000000000001e0e6                __vector_17
+                0x000000000001e0e6                __vector_19
+                0x000000000001e0e6                __vector_7
+                0x000000000001e0e6                __vector_27
+                0x000000000001e0e6                __vector_5
+                0x000000000001e0e6                __vector_33
+                0x000000000001e0e6                __vector_37
+                0x000000000001e0e6                __vector_4
+                0x000000000001e0e6                __vector_9
+                0x000000000001e0e6                __vector_2
+                0x000000000001e0e6                __vector_21
+                0x000000000001e0e6                __vector_15
+                0x000000000001e0e6                __vector_36
+                0x000000000001e0e6                __vector_29
+                0x000000000001e0e6                __vector_8
+                0x000000000001e0e6                __vector_26
+                0x000000000001e0e6                __vector_14
+                0x000000000001e0e6                __vector_16
+                0x000000000001e0e6                __vector_18
+                0x000000000001e0e6                __vector_20
+                0x000000000001e0e8                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DiscardFillerBytes
+                0x000000000001e0e8       0x34 BootloaderDFU.o
+ .text.LoadStartEndAddresses
+                0x000000000001e11c       0x20 BootloaderDFU.o
+ .text.ProcessBootloaderCommand
+                0x000000000001e13c      0x228 BootloaderDFU.o
+ .text.SetupHardware
+                0x000000000001e364       0x38 BootloaderDFU.o
+                0x000000000001e364                SetupHardware
+ .text.ResetHardware
+                0x000000000001e39c        0xa BootloaderDFU.o
+                0x000000000001e39c                ResetHardware
+ .text.startup.main
+                0x000000000001e3a6       0x24 BootloaderDFU.o
+                0x000000000001e3a6                main
+ .text.EVENT_USB_Device_UnhandledControlRequest
+                0x000000000001e3ca      0x3f4 BootloaderDFU.o
+                0x000000000001e3ca                EVENT_USB_Device_UnhandledControlRequest
+ .text.CALLBACK_USB_GetDescriptor
+                0x000000000001e7be       0x56 Descriptors.o
+                0x000000000001e7be                CALLBACK_USB_GetDescriptor
+ .text.Endpoint_ConfigureEndpoint_Prv
+                0x000000000001e814       0x22 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+                0x000000000001e814                Endpoint_ConfigureEndpoint_Prv
+ .text.Endpoint_ClearStatusStage
+                0x000000000001e836       0x3a ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+                0x000000000001e836                Endpoint_ClearStatusStage
+ .text.USB_ShutDown
+                0x000000000001e870       0x30 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+                0x000000000001e870                USB_ShutDown
+ .text.USB_ResetInterface
+                0x000000000001e8a0       0x90 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+                0x000000000001e8a0                USB_ResetInterface
+ .text.USB_Init
+                0x000000000001e930       0x12 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+                0x000000000001e930                USB_Init
+ .text.USB_INT_DisableAllInterrupts
+                0x000000000001e942       0x10 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                0x000000000001e942                USB_INT_DisableAllInterrupts
+ .text.USB_INT_ClearAllInterrupts
+                0x000000000001e952        0xa ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                0x000000000001e952                USB_INT_ClearAllInterrupts
+ .text.__vector_10
+                0x000000000001e95c      0x166 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                0x000000000001e95c                __vector_10
+ .text.USB_Device_ProcessControlRequest
+                0x000000000001eac2      0x162 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                0x000000000001eac2                USB_Device_ProcessControlRequest
+ .text.USB_Event_Stub
+                0x000000000001ec24        0x2 ../../LUFA/Drivers/USB/HighLevel/Events.o
+                0x000000000001ec24                EVENT_USB_Device_ConfigurationChanged
+                0x000000000001ec24                EVENT_USB_Device_Connect
+                0x000000000001ec24                EVENT_USB_Device_WakeUp
+                0x000000000001ec24                USB_Event_Stub
+                0x000000000001ec24                EVENT_USB_Device_Suspend
+                0x000000000001ec24                EVENT_USB_Device_StartOfFrame
+                0x000000000001ec24                EVENT_USB_Device_Disconnect
+                0x000000000001ec24                EVENT_USB_Device_Reset
+ .text.Endpoint_Write_Control_Stream_LE
+                0x000000000001ec26       0xb2 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+                0x000000000001ec26                Endpoint_Write_Control_Stream_LE
+ .text.USB_USBTask
+                0x000000000001ecd8       0x10 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+                0x000000000001ecd8                USB_USBTask
+ .text.libgcc   0x000000000001ece8       0x12 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+                0x000000000001ece8                __tablejump2__
+ .text.avr-libc
+                0x000000000001ecfa       0x10 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eerd_byte.o)
+                0x000000000001ecfa                eeprom_read_byte
+ .text.avr-libc
+                0x000000000001ed0a       0x1c /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eewr_byte.o)
+                0x000000000001ed0a                eeprom_write_byte
+                0x000000000001ed0c                eeprom_write_r18
+                0x000000000001ed26                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000001ed26        0x0 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+                0x000000000001ed26                exit
+                0x000000000001ed26                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000001ed26        0x4 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+ *(.fini0)
+                0x000000000001ed2a                _etext = .
+
+.data           0x0000000000800100       0x5c dirección de carga 0x000000000001ed2a
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x2 BootloaderDFU.o
+                0x0000000000800100                DFU_State
+                0x0000000000800101                RunBootloader
+ .data          0x0000000000800102       0x59 Descriptors.o
+                0x0000000000800102                ProductString
+                0x000000000080012a                LanguageString
+                0x000000000080012e                ConfigurationDescriptor
+                0x0000000000800149                DeviceDescriptor
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x000000000080015c                . = ALIGN (0x2)
+ *fill*         0x000000000080015b        0x1 
+                0x000000000080015c                _edata = .
+                0x000000000080015c                PROVIDE (__data_end, .)
+
+.bss            0x000000000080015c       0x1d
+                0x000000000080015c                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x000000000080015c        0xa BootloaderDFU.o
+                0x000000000080015c                EndAddr
+                0x000000000080015e                StartAddr
+                0x0000000000800160                Flash64KBPage
+                0x0000000000800161                AppStartPtr
+                0x0000000000800163                DFU_Status
+                0x0000000000800164                WaitForExit
+                0x0000000000800165                IsSecure
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800166        0x9 BootloaderDFU.o
+                0x0000000000800166                SentCommand
+                0x000000000080016e                ResponseByte
+ COMMON         0x000000000080016f        0x1 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                0x000000000080016f                USB_ConfigurationNumber
+ COMMON         0x0000000000800170        0x9 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+                0x0000000000800170                USB_IsInitialized
+                0x0000000000800171                USB_ControlRequest
+                0x0000000000800179                PROVIDE (__bss_end, .)
+                0x000000000001ed2a                __data_load_start = LOADADDR (.data)
+                0x000000000001ed86                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800179        0x0
+                0x0000000000800179                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0000000000800179                PROVIDE (__noinit_end, .)
+                0x0000000000800179                _end = .
+                0x0000000000800179                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 BootloaderDFU.o
+                                         0x12 (tamaño antes de la relajación)
+ .comment       0x0000000000000011       0x12 Descriptors.o
+ .comment       0x0000000000000011       0x12 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .comment       0x0000000000000011       0x12 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .comment       0x0000000000000011       0x12 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .comment       0x0000000000000011       0x12 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .comment       0x0000000000000011       0x12 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .comment       0x0000000000000011       0x12 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .comment       0x0000000000000011       0x12 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x1c8
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x50 BootloaderDFU.o
+ .debug_aranges
+                0x0000000000000050       0x20 Descriptors.o
+ .debug_aranges
+                0x0000000000000070       0x30 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .debug_aranges
+                0x00000000000000a0       0x30 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .debug_aranges
+                0x00000000000000d0       0x30 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .debug_aranges
+                0x0000000000000100       0x20 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .debug_aranges
+                0x0000000000000120       0x20 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .debug_aranges
+                0x0000000000000140       0x68 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .debug_aranges
+                0x00000000000001a8       0x20 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x315f
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0xdb8 BootloaderDFU.o
+ .debug_info    0x0000000000000db8      0x4b8 Descriptors.o
+ .debug_info    0x0000000000001270      0x290 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .debug_info    0x0000000000001500      0x402 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .debug_info    0x0000000000001902      0x320 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .debug_info    0x0000000000001c22      0x590 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .debug_info    0x00000000000021b2       0x78 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .debug_info    0x000000000000222a      0xd47 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .debug_info    0x0000000000002f71      0x1ee ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+
+.debug_abbrev   0x0000000000000000      0xeb7
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x35f BootloaderDFU.o
+ .debug_abbrev  0x000000000000035f      0x115 Descriptors.o
+ .debug_abbrev  0x0000000000000474      0x13e ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .debug_abbrev  0x00000000000005b2      0x1c9 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .debug_abbrev  0x000000000000077b      0x1a2 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .debug_abbrev  0x000000000000091d      0x259 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .debug_abbrev  0x0000000000000b76       0x44 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .debug_abbrev  0x0000000000000bba      0x1b8 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .debug_abbrev  0x0000000000000d72      0x145 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+
+.debug_line     0x0000000000000000     0x156f
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x45c BootloaderDFU.o
+ .debug_line    0x000000000000045c       0xfa Descriptors.o
+ .debug_line    0x0000000000000556      0x1ce ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .debug_line    0x0000000000000724      0x1d8 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .debug_line    0x00000000000008fc      0x1ec ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .debug_line    0x0000000000000ae8      0x237 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .debug_line    0x0000000000000d1f       0x56 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .debug_line    0x0000000000000d75      0x6c6 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .debug_line    0x000000000000143b      0x134 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+
+.debug_frame    0x0000000000000000      0x3f0
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0xdc BootloaderDFU.o
+ .debug_frame   0x00000000000000dc       0x24 Descriptors.o
+ .debug_frame   0x0000000000000100       0x44 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .debug_frame   0x0000000000000144       0x44 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .debug_frame   0x0000000000000188       0x98 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .debug_frame   0x0000000000000220       0x44 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .debug_frame   0x0000000000000264       0x24 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .debug_frame   0x0000000000000288      0x144 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .debug_frame   0x00000000000003cc       0x24 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+
+.debug_str      0x0000000000000000     0x156d
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x80f BootloaderDFU.o
+                                        0x863 (tamaño antes de la relajación)
+ .debug_str     0x000000000000080f      0x3eb Descriptors.o
+                                        0x5c4 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000bfa       0xee ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+                                        0x3e0 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000ce8      0x21e ../../LUFA/Drivers/USB/LowLevel/USBController.o
+                                        0x499 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000f06       0xf2 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                                        0x438 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000ff8      0x284 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                                        0x63c (tamaño antes de la relajación)
+ .debug_str     0x000000000000127c       0x39 ../../LUFA/Drivers/USB/HighLevel/Events.o
+                                        0x1ac (tamaño antes de la relajación)
+ .debug_str     0x00000000000012b5      0x255 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+                                        0x5d6 (tamaño antes de la relajación)
+ .debug_str     0x000000000000150a       0x63 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+                                        0x366 (tamaño antes de la relajación)
+
+.debug_loc      0x0000000000000000     0x1762
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x601 BootloaderDFU.o
+ .debug_loc     0x0000000000000601      0x1d7 Descriptors.o
+ .debug_loc     0x00000000000007d8       0x41 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .debug_loc     0x0000000000000819       0x13 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .debug_loc     0x000000000000082c       0xf4 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .debug_loc     0x0000000000000920      0x18d ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .debug_loc     0x0000000000000aad      0xcb5 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x2c8
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x40 BootloaderDFU.o
+ .debug_ranges  0x0000000000000040       0x10 Descriptors.o
+ .debug_ranges  0x0000000000000050       0x20 ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+ .debug_ranges  0x0000000000000070       0x20 ../../LUFA/Drivers/USB/LowLevel/USBController.o
+ .debug_ranges  0x0000000000000090       0x20 ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+ .debug_ranges  0x00000000000000b0       0x10 ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ .debug_ranges  0x00000000000000c0       0x10 ../../LUFA/Drivers/USB/HighLevel/Events.o
+ .debug_ranges  0x00000000000000d0      0x1e8 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+ .debug_ranges  0x00000000000002b8       0x10 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(BootloaderDFU.elf elf32-avr)
+LOAD linker stubs
+
+Tabla de Referencias Cruzadas
+
+Símbolo                                          Fichero
+AppStartPtr                                       BootloaderDFU.o
+CALLBACK_USB_GetDescriptor                        Descriptors.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+ConfigurationDescriptor                           Descriptors.o
+DFU_State                                         BootloaderDFU.o
+DFU_Status                                        BootloaderDFU.o
+DeviceDescriptor                                  Descriptors.o
+EVENT_USB_Device_ConfigurationChanged             ../../LUFA/Drivers/USB/HighLevel/Events.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+EVENT_USB_Device_Connect                          ../../LUFA/Drivers/USB/HighLevel/Events.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+EVENT_USB_Device_Disconnect                       ../../LUFA/Drivers/USB/HighLevel/Events.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+EVENT_USB_Device_Reset                            ../../LUFA/Drivers/USB/HighLevel/Events.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+EVENT_USB_Device_StartOfFrame                     ../../LUFA/Drivers/USB/HighLevel/Events.o
+EVENT_USB_Device_Suspend                          ../../LUFA/Drivers/USB/HighLevel/Events.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+EVENT_USB_Device_UnhandledControlRequest          BootloaderDFU.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+EVENT_USB_Device_WakeUp                           ../../LUFA/Drivers/USB/HighLevel/Events.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+EndAddr                                           BootloaderDFU.o
+Endpoint_ClearEndpoints                           ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+Endpoint_ClearStatusStage                         ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                                                  BootloaderDFU.o
+Endpoint_ConfigureEndpoint_Prv                    ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBController.o
+Endpoint_Read_Control_EStream_BE                  ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Read_Control_EStream_LE                  ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Read_Control_Stream_BE                   ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Read_Control_Stream_LE                   ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Write_Control_EStream_BE                 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Write_Control_EStream_LE                 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Write_Control_PStream_BE                 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Write_Control_PStream_LE                 ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Write_Control_Stream_BE                  ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+Endpoint_Write_Control_Stream_LE                  ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+Flash64KBPage                                     BootloaderDFU.o
+IsSecure                                          BootloaderDFU.o
+LanguageString                                    Descriptors.o
+ProductString                                     Descriptors.o
+ResetHardware                                     BootloaderDFU.o
+ResponseByte                                      BootloaderDFU.o
+RunBootloader                                     BootloaderDFU.o
+SentCommand                                       BootloaderDFU.o
+SetupHardware                                     BootloaderDFU.o
+StartAddr                                         BootloaderDFU.o
+USB_ConfigurationNumber                           ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBController.o
+USB_ControlRequest                                ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/Endpoint.o
+                                                  BootloaderDFU.o
+USB_Device_ProcessControlRequest                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+USB_Device_SendRemoteWakeup                       ../../LUFA/Drivers/USB/LowLevel/Device.o
+USB_Event_Stub                                    ../../LUFA/Drivers/USB/HighLevel/Events.o
+USB_GetNextDescriptorComp                         ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+USB_GetNextDescriptorOfType                       ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+USB_GetNextDescriptorOfTypeAfter                  ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+USB_GetNextDescriptorOfTypeBefore                 ../../LUFA/Drivers/USB/HighLevel/ConfigDescriptor.o
+USB_INT_ClearAllInterrupts                        ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBController.o
+USB_INT_DisableAllInterrupts                      ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBController.o
+USB_Init                                          ../../LUFA/Drivers/USB/LowLevel/USBController.o
+                                                  BootloaderDFU.o
+USB_IsInitialized                                 ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+                                                  ../../LUFA/Drivers/USB/LowLevel/USBController.o
+USB_ResetInterface                                ../../LUFA/Drivers/USB/LowLevel/USBController.o
+USB_ShutDown                                      ../../LUFA/Drivers/USB/LowLevel/USBController.o
+                                                  BootloaderDFU.o
+USB_USBTask                                       ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+                                                  BootloaderDFU.o
+WaitForExit                                       BootloaderDFU.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__bss_end                                         /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_clear_bss.o)
+                                                  ../../LUFA/Drivers/USB/HighLevel/USBTask.o
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+                                                  BootloaderDFU.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_copy_data.o)
+                                                  Descriptors.o
+                                                  BootloaderDFU.o
+__heap_end                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__init                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__stack                                           /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_tablejump2.o)
+                                                  ../../LUFA/Drivers/USB/HighLevel/DeviceStandardReq.o
+__vector_1                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_10                                       ../../LUFA/Drivers/USB/LowLevel/USBInterrupt.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_11                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_12                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_13                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_14                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_15                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_16                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_17                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_18                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_19                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_2                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_20                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_21                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_22                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_23                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_24                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_25                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_26                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_27                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_28                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_29                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_3                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_30                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_31                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_32                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_33                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_34                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_35                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_36                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_37                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_4                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_5                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_6                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_7                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_8                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_9                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vector_default                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+__vectors                                         /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+_exit                                             /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+eeprom_read_byte                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eerd_byte.o)
+                                                  ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+                                                  BootloaderDFU.o
+eeprom_update_byte                                /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eeupd_byte.o)
+                                                  ../../LUFA/Drivers/USB/HighLevel/EndpointStream.o
+eeprom_update_r18                                 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eeupd_byte.o)
+eeprom_write_byte                                 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eewr_byte.o)
+                                                  BootloaderDFU.o
+eeprom_write_r18                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/libat90usb1287.a(eewr_byte.o)
+exit                                              /usr/lib/gcc/avr/4.9.2/avr51/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o
+main                                              BootloaderDFU.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr51/crtat90usb1287.o

@@ -21,8 +21,6 @@ void setup()
 
    #ifdef I2CDEV_SERIAL_DEBUG
    Serial.begin(115200);
-   Interfaz.StartPinOut();
-   Interfaz.PrintValueXYZ();
    #endif
    #ifdef JoystickON
    Interfaz.StartPinOut();
@@ -33,8 +31,17 @@ void setup()
 
 void loop()
 {
+   //Aquí llamamos a la interfaz para que actualize el estado de los botones cada vez que tenemos un loop en arduino.
+
+
+   #ifdef NormalButtonState
    Interfaz.UpdateButtonState();
+   #endif
+   #ifdef FastButtonState
+   Interfaz.FastUpdateButtonState();
+   #endif
 
-
-
+   #ifdef DelayCalibrate
+   delay(TIME);
+   #endif
 }

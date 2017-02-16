@@ -6,9 +6,16 @@
 #define JoystickON
 #define JoyXY
 
+//#define FastButtonState    //Si definimos esto estaremos usando la actualización rapida, NO TERMINADA HASTA QUE SE MODIFIQUE LA LIBRERIA JOYSTICK EN CONSECUENCIA.
+#define NormalButtonState    //Actualizacion de botones normal
+
+//#define DelayCalibrate        //Definiendo esto metemos un delay en cada loop, por si la tasa de actualización es demasiado rapida en el Arduino
+#define TIME                 30 //Tiempo en ms que se utiliza para retardar la funcion FastButtonState.
+
+
 ///////////////////////////DEFINICIONES DE PINES ////////////////////
 
-//Joystick//
+
 
 //Joystick eje X/Y
 #define VRx     A3
@@ -28,7 +35,7 @@
 #define Select    A0 //Este es un analógico introducido como un digital por pullup
 #define L         6
 #define R         12
-#define Z         A1//Este es analogico introducido como un digital por pullup
+#define Z         A1 //Este es analogico introducido como un digital por pullup
 #define D0Rx      0
 #define D1Tx      1
 

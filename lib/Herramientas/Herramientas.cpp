@@ -53,8 +53,9 @@ void Herramientas::StartPinOut()
    // digitalWrite(7, LOW);
 
 
-//Calcula el rango del joy
+   //Calcula el rango del joy
    RangeValue();
+
    //CalculateOffsets();
 
    #ifdef JoystickON
@@ -78,9 +79,109 @@ void Herramientas::StartPinOut()
    #endif
 }
 
+void Herramientas::FastUpdateButtonState()
+{
+   //Misma funcion que UpdateButtonState pero con un algoritmo nuevo que pienso que es mucho más eficiente, utilizando una puerta OR.
+   //La lógica sería tener una matriz de valores que se iran actualizando mediante un OR con el nuevo valor detectado. De esta forma si tenemos en un instante T un valor de 0
+   //Y en un instante t+1 obtenemos un valor de 1, el valor final que tendrá el yoistick será de 0+1, osea 1. SI por el contrario en t tenemos un 1 y en t+1 un 1, obtendremos un valor final de
+   // 1OR1 = 1 (al no ser una puerta XOR 1+1 da 1)
+
+   //Tabla verdad-----OR
+   //                  0 + 0   =   0
+   //                  1 + 0   =   1 //Este es nuestro único problema, esto debe ser un CERO.
+   //                  0 + 1   =   1
+   //                  1 + 1   =   1
+
+   //para ser la que deseamos tendría que tener una tabla de la verdad tal que...
+   //                  0 + 0   =   0
+   //                  1 + 0   =   0
+   //                  0 + 1   =   1
+   //                  1 + 1   =   1
+   //Podemos sacar las funciones mediante Primera forma canónica o forma canónica disyuntiva (suma de productos o minterms). La cual nos dice que ((Negado(A)*B))+(A*B)=Resultado.
+   //Si reducimos a la forma más simple nos da como resultado B, por lo tanto la salida solo depende del final. Vamos a probarlo.
+
+
+
+   //Cruceta
+   Joystick.setButton(0, !digitalRead(UP));
+   Joystick.setButton(1, !digitalRead(DOWN));
+   Joystick.setButton(2, !digitalRead(LEFT));
+   Joystick.setButton(3, !digitalRead(RIGHT));
+
+   //Botonera A,B,X,Y
+   Joystick.setButton(4, !digitalRead(A));
+   Joystick.setButton(5, !digitalRead(B));
+   Joystick.setButton(6, !digitalRead(X));
+   Joystick.setButton(7, !digitalRead(Y));
+
+   //Botonera Start,Select
+   Joystick.setButton(8, !digitalRead(Start));
+   Joystick.setButton(9, !digitalRead(Select));
+
+   //Gatillos L,R
+   Joystick.setButton(10, !digitalRead(L));
+   Joystick.setButton(11, !digitalRead(R));
+
+   //Analogicos
+   // Read analog sticks and respect the deadzone value
+   int x1Final = analogRead(VRx) - x1Zero;
+   int y1Final = analogRead(VRy) - y1Zero;
+   int x2Final = analogRead(VRx2) - x2Zero;
+   int y2Final = analogRead(VRy2) - y2Zero;
+   if(abs(x1Final) < deadzone){
+      x1Final = 0;
+      }
+   if(abs(y1Final) < deadzone){
+      y1Final = 0;
+      }
+   if(abs(x2Final) < deadzone){
+      x2Final = 0;
+      }
+   if(abs(y2Final) < deadzone){
+      y2Final = 0;
+      }
+
+
+
+// Check how many analog sticks have been specified (0, 1, 2)
+// and disable (center) any that aren't used.
+   if(AnalogSticks != 1 && AnalogSticks != 2){
+      x1Final = 0;
+      y1Final = 0;
+      x2Final = 0;
+      y2Final = 0;
+      }
+   if(AnalogSticks == 1){
+      x2Final = 0;
+      y2Final = 0;
+      }
+
+      #ifdef I2CDEV_SERIAL_DEBUG
+   Serial.print("Range value MaxXY-- ");
+   Serial.println(_MaxXY);
+   Serial.print("Range value MaxZHoriVer-- ");
+   Serial.println(_MaxZHoriVer);
+   Serial.print("X1Final ");
+   Serial.println(x1Final);
+   Serial.print("Y1Final ");
+   Serial.println(y1Final);
+   Serial.print("X2Final ");
+   Serial.println(x2Final);
+   Serial.print("Y2Final ");
+   Serial.println(y2Final);
+      #endif
+// Parse autocalibrated analog stick values
+//aquí creo que debería hacer un mapeo.
+//map(VALOR,ValorMas bajo posible, valor mas alto posible, valor mas bajo destino, valor mas alto destino);
+   Joystick.setXAxis(x1Final);
+   Joystick.setYAxis(y1Final);
+   Joystick.setRxAxis(x2Final);
+   Joystick.setRyAxis(y2Final);
+}
+
 void Herramientas::UpdateButtonState()
 {
-//Lo que tenemos que hacer es ir leyendo cada uno de los pines.
+   //Lo que tenemos que hacer es ir leyendo cada uno de los pines.
    int _CurrentState = 0;
 
    if(_ButtonState[UP] != (_CurrentState = !digitalRead(UP))){
@@ -125,7 +226,7 @@ void Herramientas::UpdateButtonState()
       }
 
 
-/////BOTONES /////
+   /////BOTONES /////
    if(_ButtonState[A] != (_CurrentState = !digitalRead(A))){
       //Si tenemos que el botón es distinto, entonces ejecutamos.
       //Eejemplo, tenemos de inicio un cero en la posicion up del array, y pulsamos el botón que sería ahora uno, por lo tanto tenemos un cambio
@@ -217,7 +318,7 @@ void Herramientas::UpdateButtonState()
       }
 
 
-////////////////////////////////JOYISTICK////////////////////////
+   ////////////////////////////////JOYISTICK////////////////////////
 
 
    // Read analog sticks and respect the deadzone value
@@ -240,8 +341,8 @@ void Herramientas::UpdateButtonState()
 
 
 
-// Check how many analog sticks have been specified (0, 1, 2)
-// and disable (center) any that aren't used.
+   // Check how many analog sticks have been specified (0, 1, 2)
+   // and disable (center) any that aren't used.
    if(AnalogSticks != 1 && AnalogSticks != 2){
       x1Final = 0;
       y1Final = 0;
@@ -252,16 +353,32 @@ void Herramientas::UpdateButtonState()
       x2Final = 0;
       y2Final = 0;
       }
+
+   //El punto medio debería ser 1024/2 =512. Detalle, siempre está desfasado, hay que ver este error y corregirlo.
+   x1Final = map(analogRead(VRx), 150, (1024 - 150), -_MaxXY, _MaxXY);
+   y1Final = map(analogRead(VRy), 150, (1024 - 150), -_MaxXY, _MaxXY);
       #ifdef I2CDEV_SERIAL_DEBUG
- Serial.print("X1Final "); Serial.println(x1Final);
- Serial.print("Y1Final ");Serial.println(y1Final);
- Serial.print("X2Final "); Serial.println(x2Final);
- Serial.print("Y2Final ");Serial.println(y2Final);
+   Serial.print("Range value MaxXY-- ");
+   Serial.println(_MaxXY);
+   Serial.print("Range value MaxZHoriVer-- ");
+   Serial.println(_MaxZHoriVer);
+   Serial.print("Range value XZero-- ");
+   Serial.println(x1Zero);
+   Serial.print("Range value Yzero-- ");
+   Serial.println(y1Zero);
+   Serial.print("X1Final ");
+   Serial.println(x1Final);
+   Serial.print("Y1Final ");
+   Serial.println(y1Final);
+   Serial.print("X2Final ");
+   Serial.println(x2Final);
+   Serial.print("Y2Final ");
+   Serial.println(y2Final);
       #endif
-// Parse autocalibrated analog stick values
-//aquí creo que debería hacer un mapeo.
-   Joystick.setXAxis(x1Final);
-   Joystick.setYAxis(y1Final);
+   // Parse autocalibrated analog stick values
+   //aquí creo que debería hacer un mapeo.
+   //Joystick.setXAxis(x1Final);
+   // Joystick.setYAxis(y1Final);
    Joystick.setRxAxis(x2Final);
    Joystick.setRyAxis(y2Final);
 
@@ -270,7 +387,7 @@ void Herramientas::UpdateButtonState()
    // Joystick.setYAxis(analogRead(VRy) - _MaxXY);
    //Joystick.setRxAxis(analogRead(VRx));
    //Joystick.setRyAxis(analogRead(VRy));
-//////FIN CRUCETA///////
+   //////FIN CRUCETA///////
 
 
    // Joystick.setButton(0, !digitalRead(A));
@@ -281,6 +398,9 @@ void Herramientas::CalculateOffsets()
    //Aqui vamos a recoger los offset, como ya sabemos que valor tenemos asignado como maximo y como minimo entonces solo tenemos que recoger los offset.
    //la idea es saber el valor máximo y a partir de ahí calcular el offset para luego sumarlo/restarlo en el void loop cada vez que se actualiza el valor.
    //Este offset va a ser una media, asi que debemos almacenar X valores, yo creo que 100 son suficientes.
+
+
+   //Funciona correctamente con el del PSP.
 
    double _OffX = analogRead(VRx);
    double _OffY = analogRead(VRy);

@@ -24,18 +24,18 @@ private:
    int deadzone = 5; // Values under 5 will return 0
 
    // Variable declarations for analog sticks
-int x1Zero, y1Zero;
-int x1Value, y1Value;
-int x2Zero, y2Zero;
-int x2Value, y2Value;
-int x1Min, x1Max;
-int y1Min, y1Max;
-int x2Min, x2Max;
-int y2Min, y2Max;
-int x1F1, x1F2;
-int y1F1, y1F2;
-int x2F1, x2F2;
-int y2F1, y2F2;
+   int x1Zero, y1Zero;
+   int x1Value, y1Value;
+   int x2Zero, y2Zero;
+   int x2Value, y2Value;
+   int x1Min, x1Max;
+   int y1Min, y1Max;
+   int x2Min, x2Max;
+   int y2Min, y2Max;
+   int x1F1, x1F2;
+   int y1F1, y1F2;
+   int x2F1, x2F2;
+   int y2F1, y2F2;
 
 
 // Variable declarations for analog sticks
@@ -47,7 +47,7 @@ int y2F1, y2F2;
    int _OffsetZHori = 0;
    int _OffsetZVer  = 0;
    int _MaxXY       = 0;
-   int _MaxZHoriVer =0;
+   int _MaxZHoriVer = 0;
    //tenemos un total de 32 botones posibles, nosotros vamos tener A,B,X,Y,Gatillo-L,Gatillo-R,Start,Select,
    int _ButtonState[32] =
    {
@@ -62,6 +62,7 @@ public:
 
    Herramientas();
    void UpdateButtonState();
+   void FastUpdateButtonState();
    void PrintValueXYZ();
    void StartPinOut();
 

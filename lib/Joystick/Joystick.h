@@ -76,7 +76,7 @@ private:
    uint8_t *_buttonValues = NULL;
 
    // Joystick Settings
-   bool _autoSendState;
+   bool    _autoSendState;
    uint8_t _buttonCount;
    uint8_t _buttonValuesArraySize = 0;
    uint8_t _hatSwitchCount;

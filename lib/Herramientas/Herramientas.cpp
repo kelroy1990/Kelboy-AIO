@@ -74,8 +74,9 @@ void Herramientas::StartPinOut()
    y2Zero = analogRead(VRy2);
 
 
-
-   Joystick.begin();
+   //Aquí en el begin del yoistick, si lo dejamos tal cual por defecto está mandando todo el rato el estado cada vez que lo actualizamos, si no queremos
+   //Que haga eso tenemos que declarlarlo como false. Una vez echo eso tenemos que llamar nosotros mismos al método sendstate.
+   Joystick.begin(false);
    #endif
 }
 
@@ -177,6 +178,8 @@ void Herramientas::FastUpdateButtonState()
    Joystick.setYAxis(y1Final);
    Joystick.setRxAxis(x2Final);
    Joystick.setRyAxis(y2Final);
+
+   Joystick.sendState();
 }
 
 void Herramientas::UpdateButtonState()
@@ -355,8 +358,12 @@ void Herramientas::UpdateButtonState()
       }
 
    //El punto medio debería ser 1024/2 =512. Detalle, siempre está desfasado, hay que ver este error y corregirlo.
-   x1Final = map(analogRead(VRx), 150, (1024 - 150), -_MaxXY, _MaxXY);
-   y1Final = map(analogRead(VRy), 150, (1024 - 150), -_MaxXY, _MaxXY);
+   x1Final = map(analogRead(VRx), 150, (1024 - 150), -256, 256);
+   y1Final = map(analogRead(VRy), 150, (1024 - 150), -256, 256);
+
+   //x1Final = analogRead(VRx);
+   //y1Final = analogRead(VRy);
+
       #ifdef I2CDEV_SERIAL_DEBUG
    Serial.print("Range value MaxXY-- ");
    Serial.println(_MaxXY);
@@ -391,6 +398,7 @@ void Herramientas::UpdateButtonState()
 
 
    // Joystick.setButton(0, !digitalRead(A));
+   Joystick.sendState();
 }
 
 void Herramientas::CalculateOffsets()

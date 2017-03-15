@@ -7,6 +7,7 @@
 #include "WProgram.h"
 #endif
 #include <Settings.h>
+#include <EEPROM.h>
 
 
 
@@ -20,18 +21,17 @@ private:
    // In theory, 4 are possible, but this script is limited to 2.
    int AnalogSticks = 1;
 
-   // Analog stick input pins, invert, and deadzone:
-   int deadzone = 5; // Values under 5 will return 0
+
 
    // Variable declarations for analog sticks
    int x1Zero, y1Zero;
    int x1Value, y1Value;
    int x2Zero, y2Zero;
    int x2Value, y2Value;
-   int x1Min, x1Max;
-   int y1Min, y1Max;
-   int x2Min, x2Max;
-   int y2Min, y2Max;
+   int x1Min = 0, x1Max = 0;
+   int y1Min = 0, y1Max = 0;
+   int x2Min = 0, x2Max = 0;
+   int y2Min = 0, y2Max = 0;
    int x1F1, x1F2;
    int y1F1, y1F2;
    int x2F1, x2F2;
@@ -57,6 +57,13 @@ private:
    void CalculateOffsets();
    void RangeValue();
    int ReadState(int pin);
+   void ParpadeoLed(double time);
+   void ParpadeoLedOK(double time);
+   void StoreEEPROMCalibration(int MidPointX, int MidPointY);
+   void ReadEEPROMCalibration();
+   void CalculeRangeCalibrationON();
+   void WaitRoutineCalibration();
+   void CalibrateRoutine();
 
 public:
 
@@ -65,6 +72,7 @@ public:
    void FastUpdateButtonState();
    void PrintValueXYZ();
    void StartPinOut();
+
 
    int GetOffSetX()
    {

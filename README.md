@@ -49,3 +49,25 @@ Una vez que estemos a gusto con el resultado debemos instalarlo para que quede c
 ```
 echo "@reboot /usr/bin/nice -n 19 /usr/bin/python ~/SoftPower/SoftOff.py" >> mycron; crontab mycron;rm mycron
 ```
+
+Si no somos capaces de escribir el símbolo ~ podemos seguir el siguiente paso. Copiamos la carpeta SoftPower en /home/pi/, de forma que el código anterior quedaría como sigue:
+
+```
+echo "@reboot /usr/bin/nice -n 19 /usr/bin/python /home/pi/SoftPower/SoftOff.py" >> mycron; crontab mycron;rm mycron
+```
+
+Modificar el teclado para poder escribir de forma correcta en retropie
+-----------
+
+Para poder hacer esto debemos de cambiar el layout del teclado del mismo de gb a es, esta opción está almacenada en el archivo /etc/default/keyboard
+
+```
+sudo nano /etc/default/keyboard
+```
+
+Una vez dentro del modificamos la línea XKBLAYOUT="gb" por:
+
+```
+XKBLAYOUT="es"
+```
+De esta forma tendrémos el teclado en español y podremos escribir símobolos como la @ de la forma que estamos acostumbrados.

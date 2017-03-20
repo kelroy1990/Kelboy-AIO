@@ -56,7 +56,8 @@ void Herramientas::StartPinOut()
 
    //CalibrateRoutine();
    //Vemos si tenemos la calibración del yoistick guardada
-   if(EEPROM.read(12) == 0xFF){
+
+   if(EEPROM.read(12) == 0x0A){
       ReadEEPROMCalibration(); //Primero leelos los valores y actualizamos.
       CalculeRangeCalibrationON();
       }
@@ -714,7 +715,7 @@ void Herramientas::StoreEEPROMCalibration(int MidPointX, int MidPointY)
    EEPROM.update(9, lowByte(y1Min));
    EEPROM.update(10, highByte(MidPointY));
    EEPROM.update(11, lowByte(MidPointY));
-   EEPROM.update(12, 0xFF); //Ponemos un true en calibrado.
+   EEPROM.update(12, 0x0A); //Ponemos un true en calibrado.
 }
 
 void Herramientas::ReadEEPROMCalibration()

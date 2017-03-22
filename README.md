@@ -31,6 +31,7 @@ Añadiendo la siguiente línea:
 dtoverlay=gpio-poweroff,gpiopin=22,active_low="y"
 ```
 
+
 Presionar Ctrl+X para salir, pulsar Y para guardar y luego presionar "retorno", la tecla usada para borrar un caracter de texto cuando nos equivocamos.
 
 Posteriormente debemos descargar la carpeta con el código, podemos introducirla de forma manual en la sd o descargar la carpeta de github entera del proyecto, que contiene ademas el programa en python.
@@ -71,3 +72,34 @@ Una vez dentro del modificamos la línea XKBLAYOUT="gb" por:
 XKBLAYOUT="es"
 ```
 De esta forma tendrémos el teclado en español y podremos escribir símobolos como la @ de la forma que estamos acostumbrados.
+
+
+
+Audio por PWM
+-----------
+
+En la consola de comandos editar el archivo /boot/config.txt :
+
+```
+sudo nano /boot/config.txt
+```
+
+Añadiendo la siguiente línea:
+
+```
+dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
+```
+
+Posteriormente para habilitarlo debemos configurar la salida de audio como jack 3.5mm
+
+O podemos hacerlo manualmente de la siguiente forma, en un terminal escribimos:
+
+```
+sudo nano /etc/modules
+```
+
+Y añadimos la línea:
+
+```
+sudo amixer cset numid=3 1
+```

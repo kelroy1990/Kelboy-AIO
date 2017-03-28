@@ -7,13 +7,13 @@
 #define JoystickON
 #define JoyXY
 
-#define FastButtonState    //Si definimos esto estaremos usando la actualización rapida, NO TERMINADA HASTA QUE SE MODIFIQUE LA LIBRERIA JOYSTICK EN CONSECUENCIA.
-//#define NormalButtonState    //Actualizacion de botones normal
+//#define FastButtonState    //Si definimos esto estaremos usando la actualización rapida, NO TERMINADA HASTA QUE SE MODIFIQUE LA LIBRERIA JOYSTICK EN CONSECUENCIA.
+#define NormalButtonState    //Actualizacion de botones normal
 
 //#define DelayCalibrate        //Definiendo esto metemos un delay en cada loop, por si la tasa de actualización es demasiado rapida en el Arduino
-#define TIME         30          //Tiempo en ms que se utiliza para retardar la funcion FastButtonState.
-#define BlinkTime    400         //Tiempo de parpadeo del led de la rutina de calibrado
-#define deadzone     5
+#define TIME                 50  //Tiempo en ms que se utiliza para retardar la funcion FastButtonState.
+#define BlinkTime            400 //Tiempo de parpadeo del led de la rutina de calibrado
+#define deadzone             5
 
 ///////////////////////////DEFINICIONES DE PINES ////////////////////
 

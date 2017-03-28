@@ -210,7 +210,7 @@ void Herramientas::WaitRoutineCalibration()
 {
    double TimeStart = millis();
 
-   while(millis() < TimeStart + 2000){
+   while(millis() < TimeStart + 3000){
      #ifdef I2CDEV_SERIAL_DEBUG
          Serial.print("Estado boton A ");
          Serial.println(!digitalRead(A));

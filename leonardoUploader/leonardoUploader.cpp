@@ -20,10 +20,10 @@ int main(int argc, char *argv[])
    fd = open(argv[1], O_RDWR | O_NOCTTY | O_NDELAY);
    if(fd == -1){
       perror("open_port: Unable to open serial port\n");
-      perror(argv[1]);
+      //perror(argv[1]);
       exit(1);
       }
-   cout << "Open Serial...." << endl;
+   cout << "Open Serial Port...." << endl;
 
    //set baud to 1200 to reset Arduino Leonardo
    tcgetattr(fd, &termAttr);
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
    ioctl(fd, TIOCMBIC, &DTR_flag);   //Clear DTR pin
 
    close(fd);
-   cout << "Reset Arduino Leonardo...." << endl;
+   cout << "Reset Kelboy-AIO...." << endl;
 
    //delay 2 seconds after reseting
    sleep(2);

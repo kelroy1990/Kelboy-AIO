@@ -11,8 +11,8 @@
 //#define NormalButtonState    //Actualizacion de botones normal
 
 #define DelayCalibrate         //Definiendo esto metemos un delay en cada loop, por si la tasa de actualización es demasiado rapida en el Arduino
-#define TIME               30  //Tiempo en ms que se utiliza para retardar la funcion FastButtonState.
-#define BlinkTime          400 //Tiempo de parpadeo del led de la rutina de calibrado
+#define TIME               15  //Tiempo en ms que se utiliza para retardar la funcion FastButtonState.
+#define BlinkTime          500 //Tiempo de parpadeo del led de la rutina de calibrado
 #define deadzone           5
 
 ///////////////////////////DEFINICIONES DE PINES ////////////////////
@@ -42,7 +42,7 @@
 #define D1Tx      1
 
 //Cruceta
-#define UP        2 //i2c
+#define UP        2 //i2c0
 #define DOWN      4
 #define LEFT      3 //i2c
 #define RIGHT     11

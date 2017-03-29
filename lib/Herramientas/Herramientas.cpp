@@ -219,10 +219,12 @@ void Herramientas::WaitRoutineCalibration()
          Serial.print("Estado boton X ");
          Serial.println(!digitalRead(X));
      #endif
+         digitalWrite(7, LOW);
          if(!digitalRead(A) == 1 && !digitalRead(B) == 1){
             CalibrateRoutine();
             }
          else{
+             digitalWrite(7, HIGH);
              yield();
              }
          }

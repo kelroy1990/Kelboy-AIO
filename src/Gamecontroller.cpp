@@ -5,6 +5,8 @@
  #include <EEPROM.h>
 
 
+//VERSION 1.0 FINAL Y FUNCIONA//
+
 // Create Joystick
 
 Herramientas Interfaz;

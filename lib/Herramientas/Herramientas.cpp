@@ -208,6 +208,7 @@ void Herramientas::FastUpdateButtonState()
 
 void Herramientas::WaitRoutineCalibration()
 {
+   digitalWrite(7, HIGH);
    double TimeStart = millis();
 
    while(millis() < TimeStart + 3000){
@@ -219,15 +220,17 @@ void Herramientas::WaitRoutineCalibration()
          Serial.print("Estado boton X ");
          Serial.println(!digitalRead(X));
      #endif
-         digitalWrite(7, LOW);
+
          if(!digitalRead(A) == 1 && !digitalRead(B) == 1){
+            digitalWrite(7, LOW);
             CalibrateRoutine();
             }
          else{
-             digitalWrite(7, HIGH);
              yield();
              }
          }
+
+   digitalWrite(7, LOW);
    return;
 }
 
